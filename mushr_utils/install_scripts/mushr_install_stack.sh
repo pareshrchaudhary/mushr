@@ -16,7 +16,7 @@ sudo apt-get install python3-vcstool -y
 sudo apt install python-pip -y
 
 # Install extra ROS packages
-sudo apt install -y ros-melodic-ackermann-msgs ros-melodic-map-server ros-melodic-serial ros-melodic-urg-node ros-melodic-robot-state-publisher ros-melodic-xacro ros-melodic-joy -y
+sudo apt install -y ros-melodic-ackermann-msgs ros-melodic-map-server ros-melodic-serial ros-melodic-urg-node ros-melodic-robot-state-publisher ros-melodic-xacro ros-melodic-joy ros-melodic-ddynamic-reconfigure -y
 
 # Create workspace
 cd ~
@@ -60,6 +60,7 @@ sudo ln -s /usr/include/opencv4 /usr/include/opencv
 
 # Install librealsense. Following commands copied from
 # https://github.com/IntelRealSense/librealsense/blob/master/doc/distribution_linux.md
+# https://dev.intelrealsense.com/docs/nvidia-jetson-tx2-installation
 sudo apt-key adv --keyserver keys.gnupg.net --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE || sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-key F6E65AC044F831AC80A06380C8B3A55A6F3EFCDE
 sudo add-apt-repository "deb https://librealsense.intel.com/Debian/apt-repo $(lsb_release -cs) main" -u
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys F42ED6FBAB17C654
