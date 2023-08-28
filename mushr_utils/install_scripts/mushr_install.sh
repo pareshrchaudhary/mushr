@@ -10,19 +10,19 @@ fi
 
 # Install ROS
 cd ~
-wget https://raw.githubusercontent.com/prl-mushr/mushr/master/mushr_utils/install_scripts/mushr_install_ros.sh
+wget https://raw.githubusercontent.com/pareshrchaudhary/mushr/master/mushr_utils/install_scripts/mushr_install_ros.sh
 source mushr_install_ros.sh
 cd ~
 rm mushr_install_ros.sh
 
 # Install MuSHR stack
-wget https://raw.githubusercontent.com/prl-mushr/mushr/master/mushr_utils/install_scripts/mushr_install_stack.sh
+wget https://raw.githubusercontent.com/pareshrchaudhary/mushr/master/mushr_utils/install_scripts/mushr_install_stack.sh
 source mushr_install_stack.sh
 cd ~
 rm mushr_install_stack.sh
 
 # Install hardware drivers
-wget https://raw.githubusercontent.com/prl-mushr/mushr/master/mushr_utils/install_scripts/mushr_install_hw_drivers.sh
+wget https://raw.githubusercontent.com/pareshrchaudhary/mushr/master/mushr_utils/install_scripts/mushr_install_hw_drivers.sh
 source mushr_install_hw_drivers.sh
 cd ~
 rm mushr_install_hw_drivers.sh
